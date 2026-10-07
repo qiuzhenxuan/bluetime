@@ -1,0 +1,10 @@
+# bluetime 引擎依赖
+#
+# 刻意保持「零第三方依赖」：全部使用 Python 标准库
+# （math / datetime / urllib / sqlite3 / concurrent.futures）。
+#
+# 原因：引擎要整体搬进微信云函数，而云函数单次运行内存上限 256 MB、
+# 冷启动敏感。引入 numpy/pandas 会让包体积和启动时间都不可接受。
+# 目标运行环境：Python 3.9+
+
+# 无第三方依赖（此文件仅作说明，用 requirements.txt 占位）
